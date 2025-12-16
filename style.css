@@ -302,6 +302,45 @@ body {
     }
 }
 
+/* ======================================
+   LOGO BANNER – SCALLOPED EDGE STYLE
+====================================== */
+
+.logo-banner {
+    position: relative;
+    overflow: hidden; /* ensures clean edges */
+}
+
+/* Left & Right scallops */
+.logo-banner::before,
+.logo-banner::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 26px;
+    height: 26px;
+    background: #ffffff; /* page background color */
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Left scallop */
+.logo-banner::before {
+    left: -13px;
+}
+
+/* Right scallop */
+.logo-banner::after {
+    right: -13px;
+}
+@media (max-width: 576px) {
+    .logo-banner::before,
+    .logo-banner::after {
+        border-width: 18px;
+    }
+}
+
 /* 2. Hero Section */
 .hero-section {
     background: linear-gradient(135deg, rgba(220, 53, 69, 0.95), rgba(200, 35, 51, 0.98)), url('https://source.unsplash.com/random/1920x1080/?school') center/cover;
