@@ -495,7 +495,7 @@ body {
 
 /* 4. Feature Cards */
 .feature-card {
-    background: linear-gradient(180deg, #ffffff, #fff8e1);
+    background: linear-gradient(180deg, #ffffff, #f1de9d);
     border: 1px solid #f2c94c;
     border-radius: 16px;
     padding: 2rem;
