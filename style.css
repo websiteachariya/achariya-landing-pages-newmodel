@@ -671,3 +671,9 @@ section p.lead {
         margin-bottom: 3rem;
     }
 }
+
+
+.highlight-yellow {
+    color: #f4c430; /* rich golden yellow */
+    font-weight: 700;
+}
