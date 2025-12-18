@@ -2,7 +2,7 @@
    MAIN HEADER BAR
 ============================== */
 .top-header {
-  background: #CB2636;
+  background: #c20f0f;
   padding: 12px 0;
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -207,8 +207,8 @@
 
 
 :root {
-    --primary-red: #dc3545;
-    --dark-red: #c82333;
+    --primary-red: #A50102;
+    --dark-red: #A50102;
     --accent-gold: #ffc107;
     --dark-gold: #e0a800;
     --white: #ffffff;
@@ -343,7 +343,7 @@ body {
 
 /* 2. Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, rgba(220, 53, 69, 0.95), rgba(200, 35, 51, 0.98)), url('https://source.unsplash.com/random/1920x1080/?school') center/cover;
+    background: linear-gradient(135deg, #c20f0f, #A50102), url('https://source.unsplash.com/random/1920x1080/?school') center/cover;
     min-height: 80vh;
     color: white;
     position: relative;
@@ -526,7 +526,7 @@ body {
 
 .feature-icon {
     font-size: 2.5rem;
-    color: #d32f2f;
+    color: #C00E0E;
     margin-bottom: 1.5rem;
     position: relative;
     z-index: 1;
@@ -654,6 +654,27 @@ section p.lead {
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     border: 5px solid white;
+}
+/* Default (desktop & mobile) */
+.academic-badge {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* MID SCREENS (tablets / small laptops) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .academic-badge {
+        font-size: 1.2rem; /* 🔥 increased size */
+        padding: 10px 18px;
+    }
+}
+.academic-badge {
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+}
+.custom-red {
+    color: #BF0D0E;
+    letter-spacing: 1px;
 }
 
 /* 7. Footer */
