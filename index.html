@@ -94,63 +94,71 @@
                     <!-- 3. REGISTRATION FORM -->
                     <div id="register" class="glass-card">
                         <h3 class="text-center text-danger fw-bold mb-4">REGISTRATION FORM <br><small class="text-dark fs-6">Register Now</small></h3>
-                        <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Enter Name*" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Enter Email Address*" required>
-                            </div>
-                            <div class="mb-3 input-group">
-                                <input type="tel" class="form-control" placeholder="Mobile Number*" required>
-                            </div>
-                            <div class="mb-3">
-                                <select class="form-select" required>
-                                    <option value="" disabled selected>Select State*</option>
-                                    <option>Tamil Nadu</option>
-                                    <option>Puducherry</option>
-                                    <option>Others</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <select class="form-select" required>
-                                    <option value="" disabled selected>Select City*</option>
-                                    <option>Chennai</option>
-                                    <option>Puducherry</option>
-                                    <option>Others</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <select class="form-select" required>
-                                    <option value="CBSE" selected>Select Board/Institute* (CBSE)</option>
-                                    <option>CBSE</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <select class="form-select" required>
-                                    <option value="ACHARIYA Alapakkam" selected>Select School/Programme*</option>
-                                    <option>ACHARIYA Alapakkam</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <select class="form-select" required>
-                                    <option value="" disabled selected>Select Grade/Course*</option>
-                                    <option>Care</option>
-                                    <option>Toddler</option>
-                                    <option>Pre-Primary</option>
-                                    <option>Grade 1-10</option>
-                                </select>
-                            </div>
-                            <div class="mb-4 form-check">
-                                <input type="checkbox" class="form-check-input" id="authCheck">
-                                <label class="form-check-label small text-muted" for="authCheck">
-                                    I authorize Achariya World Class Education and its representatives to contact me via Email, SMS, WhatsApp, or call for updates and notifications, even if I am on DND/NDNC.
-                                </label>
-                            </div>
-                            <div class="d-grid">
-                                <button type="submit" class="btn-gradient-red py-3">REGISTER</button>
-                            </div>
-                        </form>
+                       <form 
+  action="https://script.google.com/macros/s/AKfycbwSmn8DQOQiZq53km3mIvxbTnGH4k1khmwqYrmz2zS-dIwRPWJBYfsdHw6M12JUuP31Kw/exec"
+  method="GET"
+  target="hidden_iframe"
+>
+
+  <input type="text" name="name" class="form-control mb-3" placeholder="Enter Name*" required>
+
+  <input type="email" name="email" class="form-control mb-3" placeholder="Enter Email Address*" required>
+
+  <input type="tel" name="mobile" class="form-control mb-3" placeholder="Mobile Number*" required>
+
+  <select name="state" class="form-select mb-3" required>
+    <option value="" disabled selected>Select State*</option>
+    <option>Tamil Nadu</option>
+    <option>Puducherry</option>
+    <option>Others</option>
+  </select>
+
+  <select name="city" class="form-select mb-3" required>
+    <option value="" disabled selected>Select City*</option>
+    <option>Chennai</option>
+    <option>Puducherry</option>
+    <option>Others</option>
+  </select>
+
+  <select name="board" class="form-select mb-3" required>
+    <option value="CBSE" selected>CBSE</option>
+  </select>
+
+  <select name="school" class="form-select mb-3" required>
+    <option value="ACHARIYA Alapakkam" selected>ACHARIYA Alapakkam</option>
+  </select>
+
+  <select name="grade" class="form-select mb-3" required>
+    <option value="" disabled selected>Select Grade*</option>
+    <option>Care</option>
+    <option>Toddler</option>
+    <option>Pre-Primary</option>
+    <option>Grade 1-10</option>
+  </select>
+
+  <!-- ✅ CONSENT (OPTIONAL) -->
+  <div class="form-check mb-4">
+    <input 
+      type="checkbox"
+      class="form-check-input"
+      name="consent"
+      value="Yes"
+      id="authCheck"
+    >
+    <label class="form-check-label small text-muted" for="authCheck">
+      I authorize Achariya World Class Education and its representatives to contact me.
+    </label>
+  </div>
+
+  <button type="submit" class="btn-gradient-red py-3 w-100">
+    REGISTER
+  </button>
+
+</form>
+
+<!-- Hidden iframe -->
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
                     </div>
                 </div>
             </div>
@@ -237,9 +245,8 @@
     </section>
  -->
    
-<section class="why-achariya-poster">
+<!-- <section class="why-achariya-poster">
 
-  <!-- Title -->
   <div class="why-title-wrap">
     <h2>WHY ACHARIYA IS THE NO.1 CHOICE</h2>
     <h4 class="subtitle">A Complete Schooling Experience Under One Roof</h4>
@@ -249,18 +256,17 @@
     </p>
   </div>
 
-  <!-- Points -->
   <div class="why-points-row">
 
     <div class="why-point purple">
-      <img src="images/placeholder.png" alt="">
+      <img src="images/pup.jpg" alt="">
       <div class="point-text">
         <strong>Strong Academic Foundation</strong>
       </div>
     </div>
 
     <div class="why-point green">
-      <img src="images/placeholder.png" alt="">
+      <img src="images/pup.jpg" alt="">
       <div class="point-text">
         <strong>12 Intelligence-Based Education</strong>
       </div>
@@ -299,7 +305,9 @@
 
   </div>
 </section>
+ -->
 
+<!-- 
 <section class="gallery-section" id="Gallery">
 
   <div class="gallery-container">
@@ -311,27 +319,24 @@
 
     <div class="row g-4 justify-content-center">
 
-      <!-- Video 1 -->
       <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="video-box" data-video="0gEkABNfSh8">
+        <div class="video-box" data-video="9Gk0nCsxPzs">
           <img src="https://img.youtube.com/vi/GqDjm6amEu0/hqdefault.jpg"
                class="video-thumb" alt="">
           <span class="play-icon">▶</span>
         </div>
       </div>
 
-      <!-- Video 2 -->
       <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="video-box" data-video="fir2kUW6wN8">
+        <div class="video-box" data-video="0YGfzcmw-qw">
           <img src="https://img.youtube.com/vi/GqDjm6amEu0/hqdefault.jpg"
                class="video-thumb" alt="">
           <span class="play-icon">▶</span>
         </div>
       </div>
 
-      <!-- Video 3 -->
       <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="video-box" data-video="X8EpkTqaHoA">
+        <div class="video-box" data-video="tDdH3w_N-Gs">
           <img src="https://img.youtube.com/vi/GqDjm6amEu0/hqdefault.jpg"
                class="video-thumb" alt="">
           <span class="play-icon">▶</span>
@@ -340,7 +345,7 @@
 
     </div>
   </div>
-</section>
+</section> -->
 
     <!-- 5. TRUST SECTION -->
     <section class="trust-section py-4 bg-light">
@@ -476,6 +481,7 @@ document.addEventListener("click", function (e) {
   box.classList.add("playing");
 });
 </script>
+
 
 </body>
 </html>
