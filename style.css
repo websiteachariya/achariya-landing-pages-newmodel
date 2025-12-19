@@ -632,6 +632,204 @@ section p.lead {
     }
 }
 
+/* ================================
+   SECTION
+================================ */
+.why-achariya-poster {
+  width: 100%;
+  background: linear-gradient(180deg, #FFD200, #FFC107);
+  padding: 70px 20px;
+}
+
+/* ================================
+   TITLE
+================================ */
+.why-title-wrap {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.why-title-wrap h2 {
+  display: inline-block;
+  background: #BF0D0E;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 40px;
+  font-weight: 900;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.subtitle {
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+.desc {
+  max-width: 800px;
+  margin: 10px auto 0;
+  color: #333;
+  opacity: 0.85;
+}
+
+/* ================================
+   GRID (MOBILE FIRST)
+================================ */
+.why-points-row {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;   /* 1 column by default */
+  gap: 20px;
+}
+
+/* ================================
+   DESKTOP → 2 COLUMNS × 3 ROWS
+================================ */
+@media (min-width: 1024px) {
+  .why-points-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================================
+   CARD
+================================ */
+.why-point {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  border-radius: 18px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-point:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.3);
+}
+
+/* ================================
+   IMAGE
+================================ */
+.why-point img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* ================================
+   TEXT
+================================ */
+.point-text strong {
+  font-size: 1rem;
+  display: block;
+}
+
+.point-text span {
+  font-size: 0.8rem;
+  opacity: 0.95;
+}
+
+/* ================================
+   COLORS
+================================ */
+.purple { background: #8E248C; }
+.green  { background: #1E8F2A; }
+.orange { background: #F57C00; }
+.violet { background: #6A1B9A; }
+.blue   { background: #0D47A1; }
+.brown  { background: #6D3B00; }
+
+
+
+
+
+/* ===============================
+   GALLERY SECTION
+================================ */
+.gallery-section {
+  padding: 70px 15px;
+  background: #f8f9fa;
+}
+
+/* CENTERED CONTAINER */
+.gallery-container {
+  max-width: 1200px;     /* controls width on large screens */
+  margin: auto;
+}
+
+/* TITLE */
+.gallery-title {
+  display: inline-block;
+  background: #BF0D0E;
+  color: #fff;
+  padding: 12px 36px;
+  border-radius: 40px;
+  font-weight: 800;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.gallery-subtitle {
+  margin-top: 12px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   VIDEO BOX
+================================ */
+.video-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  aspect-ratio: 16 / 9;
+  background: #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+}
+
+/* THUMBNAIL */
+.video-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PLAY ICON */
+.play-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 60px;
+  color: #FFD200;
+  text-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 576px) {
+  .gallery-section {
+    padding: 50px 10px;
+  }
+
+  .play-icon {
+    font-size: 46px;
+  }
+}
+
 /* 5. Trust Section */
 .trust-section {
     background: white;
@@ -717,7 +915,7 @@ section p.lead {
 
 
 .highlight-yellow {
-    color: #f4c430; /* rich golden yellow */
+    color: #FEFE2C; /* rich golden yellow */
     font-weight: 700;
 }
 
