@@ -393,6 +393,42 @@ body {
     border-color: var(--primary-red);
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
+/* ===============================
+   FORCE SAME BG COLOR ALWAYS
+================================ */
+
+/* Normal state */
+.form-control,
+.form-select {
+    background-color: #ffffff !important;
+    color: #212529;
+}
+
+/* On focus */
+.form-control:focus,
+.form-select:focus {
+    background-color: #ffffff !important;
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* After value entered (not focused) */
+.form-control:not(:placeholder-shown),
+.form-select:not([value=""]) {
+    background-color: #ffffff !important;
+}
+
+/* Disable browser autofill color (VERY IMPORTANT) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+    box-shadow: 0 0 0px 1000px #ffffff inset !important;
+    -webkit-text-fill-color: #212529 !important;
+}
+
 /* ======================================
    HERO TEXT – FONT SIZE ONLY
 ====================================== */
