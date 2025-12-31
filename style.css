@@ -1024,7 +1024,7 @@ section p.lead {
 
 /* 7. Footer */
 .footer {
-    background: #1a1a1a;
+    background: #1C1C1C;
     color: white;
     padding: 4rem 0 2rem;
 }
@@ -1221,4 +1221,718 @@ section p.lead {
         height: 50px;
         font-size: 22px;
     }
+}
+
+
+/* =====================================================
+   EXPERIENCE SECTION – FINAL PRO VERSION
+===================================================== */
+
+.experience-section {
+  background: linear-gradient(135deg, #3f0d6b, #6a1b9a);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 80px 0;
+}
+
+/* TITLE */
+.experience-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.experience-highlight {
+  color: #FFD100;
+  font-weight: 800;
+}
+
+.experience-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-top: 8px;
+}
+
+/* COUNTER BOX */
+.counter-box {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 32px 22px;
+  border-radius: 20px;
+  height: 100%;
+  text-align: center;
+  transition: all 0.35s ease;
+  backdrop-filter: blur(6px);
+}
+
+/* SHARED HOVER EFFECT */
+.counter-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.35);
+}
+
+/* NUMBERS */
+.counter-box h3 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+/* LABEL */
+.counter-box p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* TEXT COLOR ON HOVER */
+.counter-box:hover h3,
+.counter-box:hover p {
+  color: #ffffff;
+}
+
+/* =====================================================
+   DIFFERENT HOVER COLORS (BOOTSTRAP SAFE)
+===================================================== */
+
+.row > div:nth-child(1) .counter-box:hover {
+  background: linear-gradient(135deg, #1565c0, #42a5f5);
+}
+
+.row > div:nth-child(2) .counter-box:hover {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+}
+
+.row > div:nth-child(3) .counter-box:hover {
+  background: linear-gradient(135deg, #ef6c00, #ffb74d);
+}
+
+.row > div:nth-child(4) .counter-box:hover {
+  background: linear-gradient(135deg, #c62828, #ef5350);
+}
+
+.row > div:nth-child(5) .counter-box:hover {
+ background: linear-gradient(135deg, #a81ea1, #ff4fff);
+}
+
+/* =====================================================
+   RESPONSIVE BREAKPOINTS
+===================================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .experience-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .experience-section {
+    padding: 60px 15px;
+  }
+
+  .experience-title {
+    font-size: 1.8rem;
+  }
+
+  .counter-box h3 {
+    font-size: 2.1rem;
+  }
+
+  .counter-box {
+    padding: 26px 18px;
+  }
+}
+
+/* ================================
+   BEST START SECTION – FINAL
+================================ */
+
+.best-start-section {
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------------------------------
+   CONTAINER CONTROL (KEY FIX)
+-------------------------------- */
+
+/* Default Bootstrap sizes are OK till lg */
+.best-start-section .container {
+  max-width: 100%;
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  .best-start-section .container {
+    max-width: 1100px;   /* balanced */
+  }
+}
+
+/* Very large screens */
+@media (min-width: 1400px) {
+  .best-start-section .container {
+    max-width: 1180px;   /* prevents empty wide look */
+  }
+}
+
+/* -------------------------------
+   TITLE
+-------------------------------- */
+
+.best-start-title {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 800;
+  color: #000;
+}
+
+.best-start-highlight {
+      color: #FFD201;
+
+
+}
+.best-start-highlightyellow {
+    color: #B10708;
+
+}
+/* -------------------------------
+   SUBTITLE
+-------------------------------- */
+
+.best-start-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  line-height: 1.65;
+  color: #333;
+}
+
+/* -------------------------------
+   CARD
+-------------------------------- */
+
+.best-start-card {
+  background: #B10708;
+  border-radius: 26px;
+  padding: clamp(24px, 4vw, 45px);
+  color: #fff;
+}
+
+/* -------------------------------
+   IMAGE
+-------------------------------- */
+
+.best-start-image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+  transition: box-shadow 0.4s ease;
+}
+
+@media (hover: hover) {
+  .best-start-image:hover {
+    box-shadow:
+      0 18px 45px rgba(209, 231, 7, 0.4),
+      0 0 0 3px rgba(230, 188, 4, 0.4);
+  }
+}
+
+/* -------------------------------
+   CARD TEXT
+-------------------------------- */
+
+.best-start-card-title {
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 800;
+  color: #FFD001;
+}
+
+.best-start-card-text {
+  max-width: 480px;
+  font-size: clamp(0.95rem, 1vw, 1rem);
+  line-height: 1.65;
+}
+
+/* -------------------------------
+   BUTTON
+-------------------------------- */
+
+.best-start-btn {
+  display: inline-block;
+  background: #FFD001;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.best-start-btn:hover {
+  background: #ffea4d;
+  transform: translateY(-2px);
+}
+
+/* -------------------------------
+   STACKED LAYOUT FIX (TABLET & MOBILE)
+-------------------------------- */
+
+@media (max-width: 991px) {
+  .best-start-card-text,
+  .best-start-card-title {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* CENTER CONTENT INSIDE CARD */
+.best-start-card .col-lg-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* horizontal centering */
+  justify-content: center;
+}
+
+
+/* RED for "Frequently" */
+.faq-frequently {
+  color: #B10708;   /* red */
+  font-weight: 800;
+}
+
+/* YELLOW for "Questions" */
+.faq-question-highlight {
+  color: #FFD001;   /* yellow */
+  font-weight: 800;
+}
+
+
+/* ================================
+   ICON BASED FAQ
+================================ */
+
+.icon-faq-section {
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* TITLE */
+.icon-faq-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.icon-faq-title span {
+  color: #B10708;
+}
+
+.icon-faq-subtitle {
+  max-width: 720px;
+  margin: 12px auto 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* WRAPPER */
+.icon-faq-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ITEM */
+.icon-faq-item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 16px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.icon-faq-item:hover {
+  transform: translateY(-2px);
+}
+
+/* ICON */
+.icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(177, 7, 8, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+/* QUESTION */
+.icon-faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TOGGLE ICON */
+.toggle-icon {
+  font-size: 1.4rem;
+  color: #B10708;
+}
+
+/* ANSWER */
+.icon-faq-answer {
+  grid-column: 2 / -1;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+/* ACTIVE */
+.icon-faq-item.active {
+  border-color: #B10708;
+  box-shadow: 0 14px 36px rgba(177,7,8,0.15);
+}
+
+.icon-faq-item.active .icon-faq-answer {
+  max-height: 300px;
+  padding-top: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .icon-faq-item {
+    grid-template-columns: 48px 1fr;
+    padding: 16px;
+  }
+
+  .icon-faq-title {
+    font-size: 1.9rem;
+  }
+}
+
+
+/* MODERN FAQ TITLE */
+.modern-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+}
+
+/* FAQ BADGE */
+/* FORCE FAQ BADGE STYLE */
+.icon-faq-title .title-badge {
+  background-color: #B10708 !important;
+  color: #ffffff !important;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* UNDERLINE */
+.modern-title::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(65deg, #B10708, #FFD001);
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .modern-title {
+    font-size: 1.9rem;
+  }
+}
+
+
+/* ================================
+   MODERN SCHOOL HERO SECTION
+================================ */
+
+.school-hero-section {
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* ================================
+   MAIN CENTER HEADING
+================================ */
+
+.hero-main-heading {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-main-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+
+.hero-red {
+  color: #B10708;
+}
+
+/* ================================
+   LEFT CONTENT
+================================ */
+
+.hero-eyebrow {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f5a400;
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
+}
+
+.hero-highlight {
+  color: #000;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ================================
+   POINTS LIST
+================================ */
+
+.hero-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-points li {
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+/* CHECK ICON */
+.check-dot {
+  width: 22px;
+  height: 22px;
+  background: #B10708;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ================================
+   BUTTON
+================================ */
+
+.hero-btn {
+  display: inline-block;
+  background: #B10708;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #8e0506;
+  transform: translateY(-2px);
+}
+
+/* ================================
+   IMAGE
+================================ */
+
+.hero-image {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+  transition: transform 0.4s ease;
+}
+
+@media (hover: hover) {
+  .hero-image:hover {
+    transform: scale(1.03);
+  }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+  .hero-main-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-title {
+    font-size: 1.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+  .hero-main-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 12px 28px;
+  }
+}
+/* GOLD UNDERLINE UNDER MAIN HEADING */
+.hero-main-title {
+  position: relative;
+  display: inline-block; /* keeps underline centered to text */
+}
+
+/* underline */
+.hero-main-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  margin: 14px auto 0;
+  background: linear-gradient(90deg, #B10708, #FFD001);
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 208, 1, 0.45);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-main-title::after {
+    width: 90px;
+    height: 3px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-main-title::after {
+    width: 70px;
+  }
+}
+
+/* ===== FAQ HEADING COLOR FIX (FINAL) ===== */
+
+/* Frequently → RED */
+.icon-faq-title .faq-frequently {
+  color: #B10708;
+  font-weight: 800;
+}
+
+/* Questions → YELLOW (FORCED) */
+.icon-faq-title .faq-question-highlight {
+  color: #FFD201 !important;
+  font-weight: 800;
+}
+
+
+/* POPUP OVERLAY */
+.redirect-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* POPUP BOX */
+.redirect-box {
+  background: #ffffff;
+  padding: 30px 36px;
+  border-radius: 18px;
+  text-align: center;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  animation: popupFade 0.3s ease;
+}
+
+.redirect-box h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.redirect-box p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* LINK */
+.redirect-link {
+  color: #B10708;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.redirect-link:hover {
+  text-decoration: underline;
+}
+
+/* ANIMATION */
+@keyframes popupFade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
