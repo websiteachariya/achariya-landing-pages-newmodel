@@ -245,7 +245,7 @@ body {
 }
 
 .btn-gold {
-    background: var(--accent-gold);
+    background: #FFD001;
     color: #000;
     border: none;
     padding: 12px 30px;
@@ -255,7 +255,7 @@ body {
 }
 
 .btn-gold:hover {
-    background: var(--dark-gold);
+    /* background: var(--dark-gold); */
     transform: translateY(-2px);
 }
 
@@ -877,12 +877,29 @@ section p.lead {
 /* ===============================
    TITLE HIGHLIGHT
 ================================ */
-.highlight-text {
+/* DEFAULT: Large & Medium Screens */
+/* ===============================
+   MOBILE TEXT-ONLY FIX (FORCED)
+================================ */
+
+/* Default (desktop / tablet) */
+.gallery-title .highlight-text {
   background: linear-gradient(135deg, #FFD200, #FFC107);
   color: #BF0D0E;
   padding: 4px 16px;
   border-radius: 20px;
   font-weight: 900;
+  display: inline-block;
+}
+
+/* Mobile: text only */
+@media (max-width: 767px) {
+  .gallery-title .highlight-text {
+    background: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    color: #FFD200 !important;   /* yellow text */
+  }
 }
 /* ===============================
    SMALL SCREEN FIX (≤576px)
@@ -1290,29 +1307,47 @@ section p.lead {
 .counter-box:hover p {
   color: #ffffff;
 }
+/* FORCE ICON COLOR INSIDE HIGHLIGHT BOX */
+.counter-box.highlight .counter-icon i {
+  color: #FFD001 !important; /* yellow */
+}
 
 /* =====================================================
    DIFFERENT HOVER COLORS (BOOTSTRAP SAFE)
 ===================================================== */
+/* ================================
+   ICON COLORS – MATCHED TO HOVER
+================================ */
 
-.row > div:nth-child(1) .counter-box:hover {
-  background: linear-gradient(135deg, #1565c0, #42a5f5);
+/* 1️⃣ JIPMER – Blue */
+.row > div:nth-child(1) .counter-icon i {
+  color: #4ea3ee; /* rich blue */
 }
 
-.row > div:nth-child(2) .counter-box:hover {
-  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+/* 2️⃣ IIT – Green */
+.row > div:nth-child(2) .counter-icon i {
+  color: #2aad30; /* deep green */
 }
 
-.row > div:nth-child(3) .counter-box:hover {
-  background: linear-gradient(135deg, #ef6c00, #ffb74d);
+/* 3️⃣ NIT – Orange */
+.row > div:nth-child(3) .counter-icon i {
+  color: #f57c00; /* warm orange */
 }
 
-.row > div:nth-child(4) .counter-box:hover {
-  background: linear-gradient(135deg, #c62828, #ef5350);
+/* 4️⃣ CA – Red */
+.row > div:nth-child(4) .counter-icon i {
+  color: #ec4040; /* strong red */
 }
 
-.row > div:nth-child(5) .counter-box:hover {
- background: linear-gradient(135deg, #a81ea1, #ff4fff);
+/* 5️⃣ BITS – Purple */
+.row > div:nth-child(5) .counter-icon i {
+  color: #8e24aa; /* elegant purple */
+}
+@media (hover: hover) {
+  .counter-box:hover .counter-icon i {
+    color: #ffffff;
+    transform: scale(1.15);
+  }
 }
 
 /* =====================================================
@@ -1345,37 +1380,32 @@ section p.lead {
   }
 }
 
+/* COUNTER ICON */
+.counter-icon {
+  font-size: 2.2rem;
+  color: #FFD001;           /* yellow icon */
+  margin-bottom: 10px;
+}
+
+/* Highlighted box icon color */
+.counter-box.highlight .counter-icon {
+  color: #fff;
+}
+
+/* Optional hover effect */
+@media (hover: hover) {
+  .counter-box:hover .counter-icon {
+    transform: scale(1.1);
+  }
+}
+
+.counter-icon i {
+  transition: transform 0.3s ease;
+}
+
 /* ================================
    BEST START SECTION – FINAL
 ================================ */
-
-.best-start-section {
-  background: #ffffff;
-  font-family: "Poppins", sans-serif;
-}
-
-/* -------------------------------
-   CONTAINER CONTROL (KEY FIX)
--------------------------------- */
-
-/* Default Bootstrap sizes are OK till lg */
-.best-start-section .container {
-  max-width: 100%;
-}
-
-/* Large desktops */
-@media (min-width: 1200px) {
-  .best-start-section .container {
-    max-width: 1100px;   /* balanced */
-  }
-}
-
-/* Very large screens */
-@media (min-width: 1400px) {
-  .best-start-section .container {
-    max-width: 1180px;   /* prevents empty wide look */
-  }
-}
 
 /* -------------------------------
    TITLE
@@ -1422,19 +1452,62 @@ section p.lead {
 /* -------------------------------
    IMAGE
 -------------------------------- */
+/* ================================
+   IMAGE WRAPPER – CONTROLS HEIGHT
+================================ */
 
-.best-start-image {
+/* Image wrapper */
+.best-start-image-wrap {
   width: 100%;
-  max-width: 420px;
-  border-radius: 18px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+  max-width: 720px;
+  height: 360px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
   transition: box-shadow 0.4s ease;
 }
 
+/* Image */
+.best-start-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Hover (desktop only) */
+/* Hover (desktop only) */
+@media (hover: hover) {
+  .best-start-image-wrap:hover {
+    box-shadow:
+      0 30px 80px rgba(255, 215, 0, 0.55),   /* BIG GOLD GLOW */
+      0 0 0 4px rgba(255, 208, 1, 0.65);    /* STRONG OUTLINE */
+  }
+
+  .best-start-image-wrap:hover .best-start-image {
+    transform: scale(1.07);
+  }
+}
+
+/* ================================
+   IMAGE
+================================ */
+
+.best-start-image {
+  width: 100%;
+  height: 100%;               /* 🔥 fill wrapper height */
+  object-fit: cover;          /* 🔥 prevents stretching */
+  border-radius: 20px;
+  box-shadow: 0 14px 38px rgba(0,0,0,0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover (desktop only) */
 @media (hover: hover) {
   .best-start-image:hover {
+    transform: scale(1.06);
     box-shadow:
-      0 18px 45px rgba(209, 231, 7, 0.4),
+      0 20px 55px rgba(209, 231, 7, 0.35),
       0 0 0 3px rgba(230, 188, 4, 0.4);
   }
 }
@@ -1494,6 +1567,26 @@ section p.lead {
   align-items: center;   /* horizontal centering */
   justify-content: center;
 }
+
+
+/* Hover (desktop only) */
+@media (hover: hover) {
+  .best-start-image:hover {
+    transform: scale(1.06);
+    box-shadow:
+      0 20px 55px rgba(209, 231, 7, 0.35),
+      0 0 0 3px rgba(230, 188, 4, 0.4);
+  }
+}
+
+.best-start-image {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+
+
+
 
 
 /* RED for "Frequently" */
@@ -1775,7 +1868,7 @@ section p.lead {
 }
 
 .hero-btn:hover {
-  background: #8e0506;
+  background: #B10708;
   transform: translateY(-2px);
 }
 
@@ -1935,4 +2028,47 @@ section p.lead {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+
+
+
+
+/* ================================
+   YELLOW CTA BUTTON
+================================ */
+
+.btn-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background: #FFD001;          /* yellow */
+  color: #000;                  /* black text */
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 40px;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Icon spacing safety */
+.btn-yellow i {
+  font-size: 0.95rem;
+}
+.btn-yellow:hover {
+    /* background: var(--dark-gold); */
+    transform: translateY(-2px);
+}
+
+
+.cta-buttons {
+  display: flex;
+  gap: 18px;          /* ✅ SPACE BETWEEN BUTTONS */
+  justify-content: center;
+  flex-wrap: wrap;   /* mobile friendly */
 }
