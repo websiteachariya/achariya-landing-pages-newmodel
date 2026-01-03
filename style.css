@@ -302,6 +302,23 @@ body {
     }
 }
 
+/* ================================
+   STICKY HEADER – SAFE VERSION
+   (Keeps existing colors)
+================================ */
+
+
+.top-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.top-header {
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+
 /* ======================================
    LOGO BANNER – SCALLOPED EDGE STYLE
 ====================================== */

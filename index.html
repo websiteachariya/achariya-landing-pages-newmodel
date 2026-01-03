@@ -843,6 +843,20 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector(".top-header");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 100) {
+        header.classList.add("show");
+      } else {
+        header.classList.remove("show");
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
 
