@@ -2117,30 +2117,41 @@ section p.lead {
 
 
 
+
+
+/* ===============================
+   VIDEO SECTION BG
+================================ */
 .video-section {
-  background-color: white;   /* soft light grey */
+  background: #f8f8f8;
   padding: 60px 0;
 }
 
-
-.video-box {
+/* ===============================
+   YOUTUBE VIDEO BOX (SAFE)
+================================ */
+.yt-video-box {
   position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   border-radius: 14px;
   overflow: hidden;
   cursor: pointer;
   background: #000;
 }
 
-.video-thumb,
-.video-box iframe {
+/* Thumbnail & iframe SAME SIZE */
+.yt-video-thumb,
+.yt-video-box iframe {
   width: 100%;
-  height: 240px;
+  height: 100%;
   object-fit: cover;
   display: block;
+  border: none;
 }
 
-/* Play icon */
-.play-icon {
+/* Play button */
+.yt-play-icon {
   position: absolute;
   inset: 0;
   display: flex;
@@ -2148,18 +2159,64 @@ section p.lead {
   justify-content: center;
 }
 
-.play-icon i {
+.yt-play-icon i {
   background: #b10708;
   color: #fff;
-  font-size: 32px;
+  font-size: 30px;
   padding: 18px;
   border-radius: 50%;
   transition: 0.3s ease;
 }
 
-.video-box:hover .play-icon i {
+.yt-video-box:hover .yt-play-icon i {
   background: #fff;
   color: #b10708;
+}
+
+/* ===============================
+   TESTIMONIAL HEADING – TRI COLOR
+================================ */
+
+.testimonial-heading {
+  padding: 10px 12px;
+}
+
+.testimonial-title {
+  font-weight: 800;
+  font-size: 1.9rem;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* TRI COLORS */
+.tri-red {
+  color: #b10708;   /* Red */
+}
+
+.tri-white {
+  color: #0f0505;   /* White */
+}
+
+.tri-yellow {
+  color: #ffd201;   /* Yellow */
+}
+
+/* Optional subtle underline */
+.testimonial-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(90deg, #b10708, #ffd201);
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .testimonial-title {
+    font-size: 1.5rem;
+  }
 }
 
 /* FORCE BOOTSTRAP INDICATORS INTO CIRCLES */
@@ -2188,54 +2245,7 @@ section p.lead {
 .carousel-indicators .active {
   background-color: #C20F0F !important; /* dark active dot */
 }
-
 .carousel-indicators [data-bs-target] {
   width: 30px;
   height: 3px;
-}
-
-/* ===============================
-   TESTIMONIAL HEADING – TRI COLOR
-================================ */
-
-.testimonial-heading {
-  padding: 10px 12px;
-}
-
-.testimonial-title {
-  font-weight: 800;
-  font-size: 1.9rem;
-  letter-spacing: 0.5px;
-  margin: 0;
-}
-
-/* TRI COLORS */
-.tri-red {
-  color: #b10708;   /* Red */
-}
-
-.tri-white {
-  color: #0c0b0b;   /* White */
-}
-
-.tri-yellow {
-  color: #ffd201;   /* Yellow */
-}
-
-/* Optional subtle underline */
-.testimonial-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  margin: 10px auto 0;
-  background: linear-gradient(90deg, #b10708, #ffd201);
-  border-radius: 10px;
-}
-
-/* Responsive */
-@media (max-width: 576px) {
-  .testimonial-title {
-    font-size: 1.5rem;
-  }
 }
