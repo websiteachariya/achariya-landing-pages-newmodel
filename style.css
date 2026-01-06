@@ -873,6 +873,7 @@ section p.lead {
 /* ===============================
    VIDEO BOX
 ================================ */
+
 .video-box {
   position: relative;
   overflow: hidden;
@@ -917,10 +918,7 @@ section p.lead {
     font-size: 46px;
   }
 }
-/* ===============================
-   TITLE HIGHLIGHT
-================================ */
-/* DEFAULT: Large & Medium Screens */
+
 /* ===============================
    MOBILE TEXT-ONLY FIX (FORCED)
 ================================ */
@@ -944,9 +942,7 @@ section p.lead {
     color: #FFD200 !important;   /* yellow text */
   }
 }
-/* ===============================
-   SMALL SCREEN FIX (≤576px)
-================================ */
+
 /* ===============================
    SMALL SCREEN TITLE FIX
 ================================ */
@@ -1128,106 +1124,7 @@ section p.lead {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.video-thumb-wrapper {
-    position: relative;
-    cursor: pointer;
-    border-radius: 18px;
-    overflow: hidden;
-
-    aspect-ratio: 16 / 9;
-    width: 100%;
-    background: #000;
-}
-
-.video-thumb {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;   
-    border-radius: 18px;
-    transition: transform 0.4s ease;
-}
-
-.video-thumb-wrapper::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.35);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-}
-
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70px;
-    height: 70px;
-    background: rgba(255,255,255,0.95);
-    color: #BF0D0E;
-    font-size: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-    transition: all 0.3s ease;
-}
-
-.video-thumb-wrapper:hover::before {
-    opacity: 1;
-}
-
-.video-thumb-wrapper:hover .video-thumb {
-    transform: scale(1.06);
-}
-
-.video-thumb-wrapper:hover .play-icon {
-    background: #BF0D0E;
-    color: #fff;
-    transform: translate(-50%, -50%) scale(1.1);
-}
-
-@media (max-width: 991px) {
-    .play-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 26px;
-    }
-}
-
-@media (max-width: 576px) {
-    .play-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 22px;
-    }
-} */
-
-
-
-
+/* young voice of achariya  */
 
 .video-box {
     position: relative;
@@ -1265,6 +1162,8 @@ section p.lead {
 }
 
 /* Hover */
+
+
 .video-box:hover .video-thumb {
     transform: scale(1.06);
 }
@@ -1355,9 +1254,7 @@ section p.lead {
   color: #FFD001 !important; /* yellow */
 }
 
-/* =====================================================
-   DIFFERENT HOVER COLORS (BOOTSTRAP SAFE)
-===================================================== */
+
 /* ================================
    ICON COLORS – MATCHED TO HOVER
 ================================ */
@@ -1450,9 +1347,7 @@ section p.lead {
    BEST START SECTION – FINAL
 ================================ */
 
-/* -------------------------------
-   TITLE
--------------------------------- */
+
 
 .best-start-title {
   font-size: clamp(2rem, 3vw, 2.6rem);
@@ -1492,9 +1387,7 @@ section p.lead {
   color: #fff;
 }
 
-/* -------------------------------
-   IMAGE
--------------------------------- */
+
 /* ================================
    IMAGE WRAPPER – CONTROLS HEIGHT
 ================================ */
@@ -1518,7 +1411,7 @@ section p.lead {
   transition: transform 0.4s ease;
 }
 
-/* Hover (desktop only) */
+
 /* Hover (desktop only) */
 @media (hover: hover) {
   .best-start-image-wrap:hover {
@@ -1624,11 +1517,8 @@ section p.lead {
 
 .best-start-image {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+
 }
-
-
-
-
 
 
 
@@ -1770,7 +1660,7 @@ section p.lead {
   display: inline-block;
 }
 
-/* FAQ BADGE */
+
 /* FORCE FAQ BADGE STYLE */
 .icon-faq-title .title-badge {
   background-color: #B10708 !important;
@@ -2108,14 +1998,11 @@ section p.lead {
   display: flex;
   gap: 18px;          /* ✅ SPACE BETWEEN BUTTONS */
   justify-content: center;
-  flex-wrap: wrap;   /* mobile friendly */
+  flex-wrap: wrap;
+     /* mobile friendly */
+
+
 }
-
-
-
-
-
-
 
 
 
@@ -2150,7 +2037,7 @@ section p.lead {
   border: none;
 }
 
-/* Play button */
+
 /* ===============================
    UNICODE PLAY ICON (SAFE)
 ================================ */
@@ -2185,9 +2072,7 @@ section p.lead {
 
 
 
-/* ===============================
-   TESTIMONIAL HEADING – TRI COLOR
-================================ */
+
 /* ===============================
    TESTIMONIAL HEADER – REFINED
 ================================ */
@@ -2299,11 +2184,7 @@ section p.lead {
 
 
 
-
-
-
-
-
+/* faq icon */
 
 .icon-box {
   width: 48px;
