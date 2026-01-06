@@ -2151,27 +2151,39 @@ section p.lead {
 }
 
 /* Play button */
+/* ===============================
+   UNICODE PLAY ICON (SAFE)
+================================ */
+
 .yt-play-icon {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.yt-play-icon i {
+  font-size: 32px;
+  font-weight: bold;
+
   background: #b10708;
-  color: #fff;
-  font-size: 30px;
-  padding: 18px;
+  color: #ffffff;
+
+  width: 64px;
+  height: 64px;
+  margin: auto;
+
   border-radius: 50%;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.yt-video-box:hover .yt-play-icon i {
-  background: #fff;
+/* Hover effect */
+.yt-video-box:hover .yt-play-icon {
+  background: #ffffff;
   color: #b10708;
 }
+
+
+
 
 /* ===============================
    TESTIMONIAL HEADING – TRI COLOR
