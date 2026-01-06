@@ -2176,46 +2176,80 @@ section p.lead {
 /* ===============================
    TESTIMONIAL HEADING – TRI COLOR
 ================================ */
+/* ===============================
+   TESTIMONIAL HEADER – REFINED
+================================ */
 
-.testimonial-heading {
-  padding: 10px 12px;
+.video-section .testimonial-heading {
+  position: relative;
+  background: #b10708;
+  padding: 22px 18px;
+
+  max-width: 520px;        /* 🔥 reduce width */
+  margin: 0 auto 30px;    /* center + space below */
+
+  border-radius: 14px;
+  overflow: hidden;
 }
 
-.testimonial-title {
+/* Corner circles (smaller & subtle) */
+.video-section .testimonial-heading::before,
+.video-section .testimonial-heading::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  opacity: 0.18;
+  z-index: 0;
+}
+
+.video-section .testimonial-heading::before {
+  background: #ffffff;
+  top: -22px;
+  left: -22px;
+}
+
+.video-section .testimonial-heading::after {
+  background: #ffd201;
+  bottom: -22px;
+  right: -22px;
+}
+
+/* Title */
+.video-section .testimonial-title {
+  position: relative;
+  z-index: 1;
+
   font-weight: 800;
-  font-size: 1.9rem;
-  letter-spacing: 0.5px;
+  font-size: 1.75rem;     /* 🔽 slightly reduced */
+  letter-spacing: 0.4px;
   margin: 0;
 }
 
-/* TRI COLORS */
-.tri-red {
-  color: #b10708;   /* Red */
+/* Text colors */
+.video-section .tri-white {
+  color: #ffffff;
 }
 
-.tri-white {
-  color: #0f0505;   /* White */
+.video-section .tri-yellow {
+  color: #ffd201;
 }
 
-.tri-yellow {
-  color: #ffd201;   /* Yellow */
+/* ❌ REMOVE underline completely */
+.video-section .testimonial-title::after {
+  display: none;
 }
 
-/* Optional subtle underline */
-.testimonial-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  margin: 10px auto 0;
-  background: linear-gradient(90deg, #b10708, #ffd201);
-  border-radius: 10px;
-}
-
-/* Responsive */
+/* Mobile */
 @media (max-width: 576px) {
-  .testimonial-title {
-    font-size: 1.5rem;
+  .video-section .testimonial-heading {
+    max-width: 92%;
+    padding: 18px 14px;
+  }
+
+  .video-section .testimonial-title {
+    font-size: 1.45rem;
   }
 }
 
@@ -2249,3 +2283,36 @@ section p.lead {
   width: 30px;
   height: 3px;
 }
+
+
+
+
+
+
+
+
+
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  background: #fff3e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-box img {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover animation */
+.icon-faq-item:hover .icon-box img {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px rgba(177,7,8,0.5));
+}
+
