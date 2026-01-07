@@ -545,6 +545,66 @@ select:-webkit-autofill {
         font-size: 0.95rem;
     }
 }
+
+
+
+/* =====================================================
+   BOOTSTRAP-NATIVE BLUE CHECKBOX
+   (1200px – 1800px)
+===================================================== */
+@media (min-width: 1200px) and (max-width: 1800px) {
+
+  /* Native checkbox styling */
+  .glass-card .form-check-input {
+    accent-color: #0d6efd;   /* ✅ EXACT BLUE LIKE SCREENSHOT */
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+    cursor: pointer;
+  }
+
+  /* Alignment */
+  .glass-card .form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .glass-card .form-check-label {
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: #6c757d;
+    margin-bottom: 0;
+  }
+}
+
+/* =====================================================
+   UNIVERSAL CHECKBOX ALIGNMENT FIX (ALL SIZES)
+===================================================== */
+
+/* Wrapper */
+.glass-card .form-check {
+  display: flex !important;
+  align-items: flex-start !important;  /* aligns with first text line */
+  gap: 10px;
+}
+
+/* Checkbox */
+.glass-card .form-check-input {
+  margin-top: 4px;     /* optical alignment */
+  flex-shrink: 0;      /* prevents squeeze */
+  cursor: pointer;
+}
+
+/* Label text */
+.glass-card .form-check-label {
+  line-height: 1.45;
+  margin-bottom: 0;
+}
+
+
+
+
 /* Hero subheading */
 .hero-subheading {
   color: #ffffff;          /* white text */
