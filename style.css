@@ -546,61 +546,95 @@ select:-webkit-autofill {
     }
 }
 
+/* start */
 
 
 /* =====================================================
-   BOOTSTRAP-NATIVE BLUE CHECKBOX
-   (1200px – 1800px)
+   HERO FIX — NO CONTAINER (991px–1200px ONLY)
 ===================================================== */
-@media (min-width: 1200px) and (max-width: 1800px) {
+@media (min-width: 991px) and (max-width: 1200px) {
 
-  /* Native checkbox styling */
-  .glass-card .form-check-input {
-    accent-color: #0d6efd;   /* ✅ EXACT BLUE LIKE SCREENSHOT */
-    width: 18px;
-    height: 18px;
-    margin-top: 4px;
-    cursor: pointer;
+  /* REMOVE BOOTSTRAP CONTAINER EFFECT */
+  .hero-section .container {
+    max-width: 100% !important;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
-  /* Alignment */
-  .glass-card .form-check {
+  /* FORCE FLEX LAYOUT */
+  .hero-section .row {
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: center;
   }
 
-  .glass-card .form-check-label {
+  /* LEFT CONTENT — REDUCED */
+  .hero-section .hero-content {
+    flex: 0 0 58%;
+    max-width: 58%;
+    padding-right: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;      /* ↓ reduced */
+    line-height: 1.25;
+  }
+
+  .hero-content h4 {
+    font-size: 1rem;
+  }
+
+  .hero-content p.lead {
+    font-size: 0.95rem;
+    max-width: 95%;
+  }
+
+  /* RIGHT COLUMN — REMOVE OFFSET */
+  .hero-section .col-lg-4.offset-lg-1 {
+    flex: 0 0 42%;
+    max-width: 42%;
+    margin-left: 0 !important;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* FORM — GOOD COMPACT SIZE */
+  .glass-card {
+    width: 100%;
+    max-width: 340px;       /* 🔥 KEY */
+    padding: 20px 20px;     /* 🔥 reduce height */
+    border-radius: 18px;
+  }
+
+  .glass-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+  }
+
+  /* INPUTS — NOT TALL */
+  .glass-card input,
+  .glass-card select {
+    min-height: 10px;
+    padding: 6px 6px;
     font-size: 0.85rem;
-    line-height: 1.45;
-    color: #6c757d;
-    margin-bottom: 0;
+  }
+
+  /* BUTTON */
+  .glass-card button {
+    height: 44px;
+    font-size: 0.9rem;
+    border-radius: 999px;
   }
 }
 
-/* =====================================================
-   UNIVERSAL CHECKBOX ALIGNMENT FIX (ALL SIZES)
-===================================================== */
 
-/* Wrapper */
-.glass-card .form-check {
-  display: flex !important;
-  align-items: flex-start !important;  /* aligns with first text line */
-  gap: 10px;
-}
 
-/* Checkbox */
-.glass-card .form-check-input {
-  margin-top: 4px;     /* optical alignment */
-  flex-shrink: 0;      /* prevents squeeze */
-  cursor: pointer;
-}
 
-/* Label text */
-.glass-card .form-check-label {
-  line-height: 1.45;
-  margin-bottom: 0;
-}
+
+
+
+
+
+/* end */
 
 
 
