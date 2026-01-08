@@ -2236,6 +2236,22 @@ section p.lead {
     font-size: 1.45rem;
   }
 }
+/* =====================================================
+   CENTER 3RD VIDEO ON TABLET (ALL SLIDES)
+===================================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Center row content */
+  .video-section .carousel-item .row {
+    justify-content: center;
+  }
+
+  /* Target ONLY the 3rd video column */
+  .video-section .carousel-item .col-md-6:nth-child(3) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* FORCE BOOTSTRAP INDICATORS INTO CIRCLES */
 
