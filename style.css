@@ -1275,7 +1275,15 @@ section p.lead {
 ===================================================== */
 
 .experience-section {
-  background: linear-gradient(135deg, #3f0d6b, #6a1b9a);
+  background:
+    url("images/img-3.webp"),
+    linear-gradient(135deg, #6a1dad, #6a1b9a);
+
+  background-repeat: repeat;
+  background-size: 320px 320px;
+  background-position: center;
+  background-blend-mode: overlay;
+
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   padding: 80px 0;
@@ -1428,6 +1436,20 @@ section p.lead {
 
 .counter-icon i {
   transition: transform 0.3s ease;
+}
+
+
+.counter-box {
+  position: relative; /* REQUIRED for ::before */
+}
+
+.counter-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  border: 2px solid rgb(243, 223, 113); /* gold accent */
+  pointer-events: none;
 }
 
 /* ================================
@@ -1866,7 +1888,7 @@ section p.lead {
   color: #fff;
   border-radius: 50%;
   font-size: 0.8rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -1877,7 +1899,7 @@ section p.lead {
 ================================ */
 
 .hero-btn {
-  display: inline-block;
+display: inline-flex;
   background: #B10708;
   color: #fff;
   padding: 14px 36px;
@@ -2312,3 +2334,43 @@ section p.lead {
   filter: drop-shadow(0 0 6px rgba(177,7,8,0.5));
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.why-achariya-poster {
+  position: relative;
+  padding-top: 20px; /* space for image */
+  
+}
+
+/* Top decorative image */
+.why-top-img {
+  display: block;
+  margin: 0 auto 30px; /* center + spacing */
+  width: clamp(160px, 30vw, 320px);
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 576px) {
+  .why-achariya-poster {
+    padding-top: 10px;
+  }
+
+  .why-top-img {
+    margin-bottom: 10px;
+  }
+}
